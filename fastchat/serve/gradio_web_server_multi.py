@@ -200,7 +200,11 @@ window.__gradio_mode__ = "app";
                         show_plot=True,
                     )
 
-            with gr.Tab("ℹ️ About Us", id=4):
+            with gr.Tab("Copilot Arena Leaderboard", id = 4):
+                build_copilot_arena()
+
+
+            with gr.Tab("ℹ️ About Us", id=5):
                 about = build_about()
 
         context_state = gr.State(context)

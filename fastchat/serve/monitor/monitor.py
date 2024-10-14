@@ -1010,6 +1010,14 @@ def build_leaderboard_tab(
                         column_widths=[70, 190, 80, 80, 90, 150],
                     )
 
+            with gr.Tab("Copilot Arena", id=2):
+                build_arena_tab(
+                    elo_results_copilot,
+                    model_table_df,
+                    default_md,
+                    show_plot=show_plot,
+                )
+
             with gr.Tab("Full Leaderboard", id=4):
                 build_full_leaderboard_tab(
                     elo_results_text, model_table_df, model_to_score
